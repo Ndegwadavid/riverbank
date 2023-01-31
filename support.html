@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #cdd1c4bb;
+  padding: 20px;
+}
+button{
+    background-color: #e742109d;
+    border-color: #e742109d;
+    border-radius: 20px;
+    font-size: 20px;
+    
+}
+button:hover{
+    background-color: rgba(12, 224, 125, 0.938);
+    transition: width 2s;
+}
+</style>
+</head>
+<body>
+
+<h3>SUPPORT 24/7</h3>
+
+<div class="container">
+  <form action="post">
+    <label for="fname">Username</label>
+    <input type="text" id="fname" name="firstname" placeholder="Preffered Username">
+
+    <label for="lname">Email or Phone</label>
+    <input type="text" id="lname" name="lastname" placeholder="Email or Phone">
+
+    <label for="country">How can we help </label>
+    <select id="country" name="country">
+      <option value="Verse">Daily verses</option>
+      <option value="Song">Ministry</option>
+      <option value="Our generation">Children</option>
+      <option value="Spiritualand mental health">Health</option>
+      <option value="Bible reading">Spiritual Nourishment</option>
+      <option value="Prayer">Prayer Request</option>
+      <option value="Ellen white books">Supplemtary Books</option>
+      <option value="Holy spirit">Trinity</option>
+    </select>
+
+    <label for="subject">Speak To Us</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+   
+  <a href="successfully.html" target=""><button id="button">SUBMIT</button></a></p>
+
+<script>
+function myFunction() {
+  document.getElementById("button").innerHTML = "Submitted successfully!";
+}
+</script>
+
+  </form>
+</div>
+</body>
+</html>
