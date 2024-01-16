@@ -1,0 +1,76 @@
+body {
+    background: url('/images/bible.jpg') center/cover no-repeat fixed;
+    margin: 0;
+}
+
+.pane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    display: grid;
+    place-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    background: linear-gradient(145deg, #767981, #fefeff);
+    width: 90%;
+    max-width: 350px; /* Adjusted max-width for larger screens */
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+h4 {
+    text-align: center;
+}
+
+button {
+    display: flex;
+    height: 3em;
+    width: 100%;
+    max-width: 200px; /* Adjusted max-width for larger screens */
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+}
+
+button:span {
+    text-decoration: none;
+}
+
+button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+
+button:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 768px) {
+    .pane {
+        width: 70%;
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .pane {
+        width: 50%;
+    }
+}
