@@ -1,0 +1,71 @@
+/* planets.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Move the video behind other content */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    
+    
+}
+
+.overlay-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #b1b695;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 100px;
+   
+  }
+  
+  button:hover {
+    background: #c4e201;
+  }
+  
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }

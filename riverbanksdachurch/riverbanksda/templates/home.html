@@ -1,0 +1,322 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/component.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vegas.min.css' %}">
+	<title>RiverBank SDA Church</title>
+<!--
+Snapshot Template
+http://www.templatemo.com/tm-493-snapshot
+
+Zoom Slider
+https://vegas.jaysalvat.com/
+
+Caption Hover Effects
+http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+-->
+
+	<!-- Google web font  -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	
+</head>
+<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+
+    
+    <!-- Preloader section
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-pulse"></div>
+</div>-->
+
+
+<!-- Navigation section  -->
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <a href="#top" class="navbar-brand smoothScroll">RiverBankSDA</a>
+      </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
+            <li><a href="{% url 'resources' %}" class="smoothScroll"><span>Studies</span></a></li>
+            <li><a href="{% url 'bibleverse' %}" class="smoothScroll"><span>Bible Quote</span></a></li>
+            <li><a href="{% url 'prayerrequests' %}" class="smoothScroll"><span>Prayer Request</span></a></li>
+          </ul>
+       </div>
+
+    </div>
+  </div>
+
+
+<!-- Home section -->
+
+<section id="home">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to RiverBank SDA church</h1>
+        <p class="wow fadeInUp" data-wow-delay="0.9s"><strong>Revelation 14:9-11</strong> <br>9 And another angel, a third, followed them, saying with a loud voice, “If anyone worships the beast and its image and receives a mark on his forehead or on his hand, 10 he also will drink the wine of God's wrath, poured full strength into the cup of his anger, and he will be tormented with fire and sulfur in the presence of the holy angels and in the presence of the Lamb. 11 And the smoke of their torment goes up forever and ever, and they have no rest, day or night, these worshipers of the beast and its image, and whoever receives the mark of its name.”</p>
+        <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- About section -->
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="about-thumb">
+          <h1>Word OF GOD</h1>
+          <p><strong>John 14:6</strong> Jesus said to him, "I am the way, the truth, and the life. No one comes to the Father except through Me.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
+        <img src="{% static 'images/bible.jpg' %}" class="img-responsive img-circle" alt="About">
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="section-title text-center">
+          <h1>Spiritual Leaders | Our Members</h1>
+          <h3>Together, we share a common bond of faith, support, and love, fostering a sense of belonging that enriches our shared spiritual experience. </h3>
+        </div>
+      </div>
+
+      <!-- team carousel -->
+      <div id="team-carousel" class="owl-carousel">
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="{% static 'images/team-img1.jpg' %}" class="img-responsive img-circle" alt="Mary">
+          </div>
+          <h2 class="heading">DANIEL KIMANI, PASTOR</h2>
+          <p class="description">Leads us on our spiritual journey, offering guidance, inspiration, and compassion.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="{% static 'images/team-img2.jpg' %}" class="img-responsive img-circle" alt="Jack">
+          </div>
+          <h2 class="heading">LANTANO NABAALA, EVANGELIST</h2>
+          <p class="description">Unveiling mysteries through the Bible and spirit of prophecy</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="{% static 'images/team-img3.jpg' %}" class="img-responsive img-circle" alt="Linda">
+          </div>
+          <h2 class="heading">MOSES MUTWIRI, ELDER</h2>
+          <p class="description">Phasellus nec ante in nunc molestie tincidunt ut eu diam.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="{% static 'images/team-img4.jpg' %}" class="img-responsive img-circle" alt="Sandy">
+          </div>
+          <h2 class="heading">EVANGELIST CHOMBA</h2>
+          <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
+        </div>
+      </div>
+
+      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="team-thumb">
+          <div class="image-holder">
+            <img src="{% static 'images/members.jpg' %}" class="img-responsive img-circle" alt="Lukia">
+          </div>
+          <h2 class="heading">RiverBankSDA MEMBERS</h2>
+          <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
+        </div>
+      </div>
+
+      
+
+
+
+      </div>
+      <!-- end team carousel -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Gallery section -->
+
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="section-title">
+          <h1>OUR STUDIES</h1>
+          <p>At Riverbank Church, we foster a deeper comprehension of God's word through <strong>biblical sermons</strong>, <strong>spirit of prophecy books</strong>, and in-depth exploration of controversial studies like: <strong>nephilims</strong>, <strong>life on other planets</strong>, <strong>the Holy Trinity</strong> and many more. Join us in unraveling the mysteries of faith and searching the truth<strong><br>John 14:6</strong> Jesus answered, “I am the way and the truth and the life. No one comes to the Father except through me.</p>
+        </div>
+      </div>
+
+      <ul class="grid cs-style-4">
+        <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="{% static 'images/bible.jpg' %}" alt="image 1"></div>
+            <figcaption>
+              <h1>SERMONS</h1>
+              <small>Explore transformative teachings in our Sermon Section</small>
+              <a href="{% url 'sermons' %}">READ MORE</a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="{% static 'images/bible.jpg' %}" alt="image 2"></div>
+            <figcaption>
+              <h1>SPIRIT OF PROPHECY</h1>
+              <small>A message to remnants of the world</small>
+              <a href="{% url 'spiritofprophecy' %}">READ MORE</a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="{% static 'images/heaven.jpg' %}" alt="image 3"></div>
+            <figcaption>
+              <h1>TRINITY</h1>
+              <small>What is the true nature of GOD?</small>
+              <a href="{% url 'trinity' %}">READ MORE</a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-6 col-sm-6">
+          <figure>
+            <div><img src="{% static 'images/space.jpg' %}" alt="image 4"></div>
+            <figcaption>
+              <h1>LIFE ON OTHER PLANETS</h1>
+              <small>Are we Alone?</small>
+              <a href="{% url 'planets' %}">READ MORE</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact section -->
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+
+       <div class="col-md-offset-1 col-md-10 col-sm-12">
+
+        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
+          <h1><strong>HAVE A BIBLICAL QUESTION?</strong></h1>
+          <p>Engage in thoughtful exploration in our Question Section. Submit your biblical inquiries, where you do not understand a bible concept and let wisdom from GOD illuminate your spiritual journey.<br><strong>2 Corinthians 13:14</strong> May the grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit be with you all.
+
+          </p>
+        </div>
+
+        <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
+            {% csrf_token%}
+          <div class="col-md-6 col-sm-6">
+            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <input name="email" type="text" class="form-control" id="email" placeholder="Where do you worship?">
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+          </div>
+          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
+            <input type="submit" class="form-control" value="SEND">
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer section -->
+
+<footer>
+	<div class="container">
+    
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+            
+                <ul class="social-icon"> 
+                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
+                    <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a></li>
+                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
+                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
+                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="1.0s"></a></li>
+                </ul>
+
+				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2024 RiverBank SDA Church
+                
+			</div>
+			
+		</div>
+        
+	</div>
+</footer>
+
+<!-- Back top -->
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/custom.js.js' %}"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/toucheffects.js' %}"></script>
+<script src="{% static 'js/vegas.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+</body>
+</html>

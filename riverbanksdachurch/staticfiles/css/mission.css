@@ -1,0 +1,47 @@
+
+.mission-section {
+    background-color: #f4f4f4; /* Set the background color for the mission section */
+    padding: 50px 0; /* Add padding to the top and bottom of the mission section */
+    text-align: center; /* Center-align the text within the mission section */
+}
+
+/* Section Title */
+.section-title h2{
+    font-size: 28px; /* Set the font size for the section title */
+    margin-bottom: 30px; /* Add margin at the bottom of the section title */
+}
+
+/* Mission Item */
+.mission-item {
+    border-radius: 34px;
+background: #ffffff;
+box-shadow:  50px 50px 100px #828282,
+             -50px -50px 100px #ffffff;
+}
+
+/* Mission Item Title */
+.mission-item h3 {
+    color: #009688; /* Set the text color for mission item titles */
+    font-size: 24px; /* Set the font size for mission item titles */
+    margin-bottom: 15px; /* Add margin at the bottom of mission item titles */
+}
+
+/* Mission Item Content */
+.mission-item p {
+    color: #555; /* Set the text color for mission item content */
+    line-height: 1.6; /* Set the line height for better readability */
+    margin-bottom: 15px; /* Add margin at the bottom of mission item content */
+}
+
+/* Creative Fields */
+.creative-fields {
+    margin-top: 15px; /* Add margin at the top of creative fields */
+}
+
+/* Read More & Visit Us Button */
+.read-visit-btn {
+    border-radius: 53px;
+background: #ffffff;
+box-shadow:  25px 25px 50px #8f8f8f,
+             -25px -25px 50px #ffffff;
+}

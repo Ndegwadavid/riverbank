@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Prayer requests</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/requests.css' %}">
+    </head>
+    <body>
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 20px;">Prayer Request Form</h2>
+            <form action="#" method="post" id="prayerForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="prayerRequest">Prayer Request:</label>
+                <textarea id="prayerRequest" name="prayerRequest" placeholder="for example: remember me in prayers, feeling unwell" required></textarea>
+        
+                <button type="button" onclick="submitForm()">Submit Prayer Request</button>
+                <p id="successMessage">Your prayer request has been submitted successfully!</p>
+                <button type="button"><a href="{% url 'home' %}">Home</a></button>
+            </form>
+        </div>
+
+        <script>
+            function submitForm() {
+                document.getElementById("successMessage").style.display = "block";
+
+                setTimeout(function() {
+                    document.getElementById("successMessage").style.display = "none";
+                    
+                    window.location.href = "/";
+                }, 3000); 
+            }
+        </script>
+    </body>
+</html>
